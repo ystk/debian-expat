@@ -1,4 +1,3 @@
-#! /bin/sh /usr/share/dpatch/dpatch-run
 ## 302191_install_expat_config_h.dpatch by Raphael Bossek
 ##   and Arno van Rangelrooij <arno@debian.org>
 ##
@@ -10,7 +9,6 @@
 ## DP:
 ## DP: <URL:http://bugs.debian.org/302191>
 
-@DPATCH@
 diff -urNad expat-2.0.1~/Makefile.in expat-2.0.1/Makefile.in
 --- expat-2.0.1~/Makefile.in	2007-05-09 20:38:50.000000000 +0200
 +++ expat-2.0.1/Makefile.in	2008-05-07 02:23:11.000000000 +0200
