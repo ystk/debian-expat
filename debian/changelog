@@ -1,12 +1,37 @@
-expat (2.1.0-1+deb7u1) wheezy; urgency=low
+expat (2.1.0-6) unstable; urgency=low
 
-  [ Matthias Klose ]
+  * Really do the Ubuntu sync (closes: #748250).
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Wed, 04 Jun 2014 15:54:15 +0000
+
+expat (2.1.0-5) unstable; urgency=low
+
+  * Move to Standards-Version 3.9.5 and to debhelper level 9 .
+  * Sync with Ubuntu.
+
+  [ Matthias Klose <doko@ubuntu.com> ]
+  * Use dh-autoreconf (closes: #748250).
+  * Enable parallel builds.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Sun, 18 May 2014 20:43:19 +0200
+
+expat (2.1.0-4) unstable; urgency=low
+
+  * New maintainer (closes: #660681).
+  * Update to Standards-Version 3.9.4 , no changes needed.
+  * Move to compat level 8 .
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Sun, 07 Jul 2013 12:43:10 +0200
+
+expat (2.1.0-3) unstable; urgency=low
+
+  * QA upload, set maintainer address to the QA team.
+  * Move expat_config.h into the multiarch include location.
+  * Make libexpat1-dev Multi-Arch: same.
+  * Update config.{guess,sub} for aarch64 (Wookey). Closes: #689619.
   * Don't ship the pkgconfig file in lib64expat1-dev. Closes: #706932.
 
-  [ Laszlo Boszormenyi (GCS) ]
-  * New maintainer (closes: #660681). 
-
- -- Andreas Beckmann <anbe@debian.org>  Thu, 05 Dec 2013 12:39:53 +0100
+ -- Matthias Klose <doko@debian.org>  Wed, 08 May 2013 11:13:47 +0200
 
 expat (2.1.0-1) unstable; urgency=low
 
