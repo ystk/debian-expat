@@ -1,3 +1,10 @@
+expat (2.1.0-6+deb8u1) jessie-security; urgency=high
+
+  * Fix CVE-2015-1283, multiple integer overflows in the XML_GetBuffer
+    function.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Fri, 24 Jul 2015 15:40:33 +0000
+
 expat (2.1.0-6) unstable; urgency=low
 
   * Really do the Ubuntu sync (closes: #748250).
