@@ -1,3 +1,17 @@
+expat (2.0.1-7+squeeze2) squeeze-lts; urgency=low
+
+  * Non-maintainer upload by the Squeeze LTS Team.
+  * debian/rules: deactivate unpatch, does not even work
+                  in +squeeze1 anymore 
+  * CVE-2015-1283
+    Multiple integer overflows in the XML_GetBuffer function in Expat
+    through 2.1.0, as used in Google Chrome before 44.0.2403.89 and
+    other products, allow remote attackers to cause a denial of service
+    (heap-based buffer overflow) or possibly have unspecified other
+    impact via crafted XML data, a related issue to CVE-2015-2716.
+
+ -- Thorsten Alteholz <debian@alteholz.de>  Sat, 25 Jul 2015 07:20:02 +0200
+
 expat (2.0.1-7+squeeze1) stable-security; urgency=low
 
   * CVE-2012-0876 CVE-2012-1148
