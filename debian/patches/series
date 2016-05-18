@@ -3,3 +3,5 @@
 autoconfupdate.diff
 verbose-mode.diff
 CVE-2015-1283.patch
+CVE-2015-1283-refix.patch
+CVE-2016-0718-v2-2-1.patch
