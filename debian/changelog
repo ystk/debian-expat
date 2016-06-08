@@ -1,3 +1,11 @@
+expat (2.1.0-6+deb8u3) jessie-security; urgency=high
+
+  * Use upstream fix for the following security vulnerabilities:
+     - CVE-2012-6702, unanticipated internal calls to srand
+     - CVE-2016-5300, use of too little entropy
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Sun, 05 Jun 2016 08:32:26 +0000
+
 expat (2.1.0-6+deb8u2) jessie-security; urgency=high
 
   * Avoid relying on undefined behavior in CVE-2015-1283 fix.
