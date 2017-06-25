@@ -6,3 +6,5 @@ CVE-2015-1283.patch
 CVE-2015-1283-refix.patch
 CVE-2016-0718-v2-2-1.patch
 cve-2012-6702-plus-cve-2016-5300-v1.patch
+CVE-2017-9233.patch
+CVE-2016-9063.patch

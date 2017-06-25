@@ -1,3 +1,11 @@
+expat (2.1.0-6+deb8u4) jessie-security; urgency=high
+
+  * Use upstream fix for the following vulnerabilities:
+    - CVE-2017-9233, external entity infinite loop bug,
+    - CVE-2016-9063, undefined behavior from signed integer overflow.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Sun, 18 Jun 2017 06:54:14 +0000
+
 expat (2.1.0-6+deb8u3) jessie-security; urgency=high
 
   * Use upstream fix for the following security vulnerabilities:
