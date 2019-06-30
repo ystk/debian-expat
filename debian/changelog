@@ -1,3 +1,13 @@
+expat (2.1.0-6+deb8u5) jessie-security; urgency=high
+
+  * Non-maintainer upload by the LTS team.
+  * Fix CVE-2018-20843:
+    It was discovered that Expat, an XML parsing C library, did not properly
+    handled XML input including XML names that contain a large number of
+    colons, potentially resulting in denial of service.
+
+ -- Markus Koschany <apo@debian.org>  Sat, 29 Jun 2019 15:28:34 +0200
+
 expat (2.1.0-6+deb8u4) jessie-security; urgency=high
 
   * Use upstream fix for the following vulnerabilities:

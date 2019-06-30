@@ -1,3 +1,4 @@
+CVE-2018-20843.patch
 302191_install_expat_config_h.diff
 412786_xmlwf_man_standard_fix.diff
 autoconfupdate.diff
