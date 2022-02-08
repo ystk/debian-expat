@@ -1,3 +1,15 @@
+expat (2.1.0-6+deb8u7) jessie-security; urgency=high
+
+  * Non-maintainer upload by the ELTS team.
+  * Fix CVE-2021-46143, CVE-2022-22822, CVE-2022-22823, CVE-2022-22824,
+    CVE-2022-22825, CVE-2022-22826, CVE-2022-22827, CVE-2022-23852,
+    CVE-2022-23990 and CVE-2021-45960.
+    Multiple security vulnerabilities have been discovered in Expat, the XML
+    parsing C library. Integer overflows or invalid shifts may lead to a denial
+    of service or other unspecified impact.
+
+ -- Markus Koschany <apo@debian.org>  Mon, 31 Jan 2022 23:36:43 +0100
+
 expat (2.1.0-6+deb8u6) jessie-security; urgency=high
 
   * CVE-2019-15903: Prevent an issue where a specially-crafted XML input
