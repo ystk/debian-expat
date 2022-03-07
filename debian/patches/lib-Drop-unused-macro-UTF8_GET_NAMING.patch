@@ -1,0 +1,27 @@
+From: Sebastian Pipping <sebastian@pipping.org>
+Date: Tue, 8 Feb 2022 17:37:14 +0100
+Subject: lib: Drop unused macro UTF8_GET_NAMING
+Origin: https://github.com/libexpat/libexpat/commit/ee2a5b50e7d1940ba8745715b62ceb9efd3a96da
+Bug: https://github.com/libexpat/libexpat/pull/562
+
+[Salvatore Bonaccorso: Backport to 2.2.6 for context changes]
+---
+ expat/lib/xmltok.c | 5 -----
+ 1 file changed, 5 deletions(-)
+
+--- a/lib/xmltok.c
++++ b/lib/xmltok.c
+@@ -71,13 +71,6 @@
+                       + ((((byte)[2]) >> 5) & 1)] \
+          & (1 << (((byte)[2]) & 0x1F)))
+ 
+-#define UTF8_GET_NAMING(pages, p, n) \
+-  ((n) == 2 \
+-  ? UTF8_GET_NAMING2(pages, (const unsigned char *)(p)) \
+-  : ((n) == 3 \
+-     ? UTF8_GET_NAMING3(pages, (const unsigned char *)(p)) \
+-     : 0))
+-
+ /* Detection of invalid UTF-8 sequences is based on Table 3.1B
+    of Unicode 3.2: http://www.unicode.org/unicode/reports/tr28/
+    with the additional restriction of not allowing the Unicode

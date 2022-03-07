@@ -1,0 +1,33 @@
+From: Sebastian Pipping <sebastian@pipping.org>
+Date: Sat, 12 Feb 2022 00:19:13 +0100
+Subject: lib: Fix (harmless) use of uninitialized memory
+Origin: https://github.com/libexpat/libexpat/commit/6881a4fc8596307ab9ff2e85e605afa2e413ab71
+Bug: https://github.com/libexpat/libexpat/pull/561
+
+[Salvatore Bonacorso: Backport to 2.2.6 for context changes]
+---
+ expat/lib/xmlparse.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+
+--- a/lib/xmlparse.c
++++ b/lib/xmlparse.c
+@@ -661,8 +661,7 @@ XML_ParserCreate(const XML_Char *encodin
+ XML_Parser XMLCALL
+ XML_ParserCreateNS(const XML_Char *encodingName, XML_Char nsSep)
+ {
+-  XML_Char tmp[2];
+-  *tmp = nsSep;
++  XML_Char tmp[2] = {nsSep, 0};
+   return XML_ParserCreate_MM(encodingName, NULL, tmp);
+ }
+ 
+@@ -1288,8 +1287,7 @@ XML_ExternalEntityParserCreate(XML_Parse
+      would be otherwise.
+   */
+   if (ns) {
+-    XML_Char tmp[2];
+-    *tmp = namespaceSeparator;
++    XML_Char tmp[2] = {namespaceSeparator, 0};
+     parser = parserCreate(encodingName, &parser->m_mem, tmp, newDtd);
+   }
+   else {

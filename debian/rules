@@ -97,7 +97,10 @@ endif
 	docbook-to-man doc/xmlwf.sgml > debian/xmlwf.1
 	touch $@
 
-install: build
+check: build
+	$(MAKE) -C build/ check
+
+install: build check
 	dh_testdir
 	dh_testroot
 	dh_prep

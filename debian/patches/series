@@ -15,3 +15,14 @@ CVE-2021-46143.patch
 CVE-2022-22822.patch
 CVE-2022-23852.patch
 CVE-2022-23990.patch
+Prevent-integer-overflow-in-storeRawNames.patch
+Prevent-stack-exhaustion-in-build_model.patch
+lib-Fix-harmless-use-of-uninitialized-memory.patch
+lib-Protect-against-malicious-namespace-declarations.patch
+tests-Cover-CVE-2022-25236.patch
+lib-Drop-unused-macro-UTF8_GET_NAMING.patch
+lib-Add-missing-validation-of-encoding-CVE-2022-2523.patch
+tests-Cover-missing-validation-of-encoding-CVE-2022-.patch
+Fix-build_model-regression.patch
+tests-Protect-against-nested-element-declaration-mod.patch
+relax-check-for-CVE-2022-25236.patch
