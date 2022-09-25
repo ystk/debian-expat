@@ -26,3 +26,6 @@ tests-Cover-missing-validation-of-encoding-CVE-2022-.patch
 Fix-build_model-regression.patch
 tests-Protect-against-nested-element-declaration-mod.patch
 relax-check-for-CVE-2022-25236.patch
+
+CVE-2022-40674.patch
+CVE-2022-40674_addon.patch

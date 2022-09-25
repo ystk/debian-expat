@@ -95,6 +95,9 @@ ifneq ($(BUILD64),)
 	$(MAKE) $(NJOBS) -C buildw64/ buildlib LIBRARY=libexpatw.la
 endif
 	docbook-to-man doc/xmlwf.sgml > debian/xmlwf.1
+#TEST	echo "##### add testsuite ########################"
+#TEST	$(MAKE) -C build/ check
+#TEST	echo "##### end testsuite ########################"
 	touch $@
 
 check: build
