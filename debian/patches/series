@@ -26,7 +26,24 @@ tests-Cover-missing-validation-of-encoding-CVE-2022-.patch
 Fix-build_model-regression.patch
 tests-Protect-against-nested-element-declaration-mod.patch
 relax-check-for-CVE-2022-25236.patch
-
 CVE-2022-40674.patch
 CVE-2022-40674_addon.patch
 CVE-2022-43680.patch
+
+CVE-2023-52425/001_3484383fa75e0ea2aa716360088813c3b205b261.patch
+# not used, only adds a comment. CVE-2023-52425/002_60dffa148c3ce26799cb933afdb0dc3581ad2098.patch
+CVE-2023-52425/004a-backport_XML_Parse_SINGLE_BYTES.patch
+CVE-2023-52425/003_9cdf9b8d77d5c2c2a27d15fb68dd3f83cafb45a1.patch
+CVE-2023-52425/004b_1b9d398517befeb944cbbadadf10992b07e96fa2.patch
+CVE-2023-52425/005_9fe3672459c1bf10926b85f013aa1b623d855545.patch
+CVE-2023-52425/006_f1eea784d0429bc4813a3d66a8e24e6c9df56be7.patch
+CVE-2023-52425/007_09957b8ced725b96a95acff150facda93f03afe1.patch
+CVE-2023-52425/008_1d3162da8a85a398ab451aadd6c2ad19587e5a68.patch
+CVE-2023-52425/009_8ddd8e86aa446d02eb8d398972d3b10d4cad908a.patch
+CVE-2023-52425/010_ad9c01be8ee5d3d5cac2bfd3949ad764541d35e7.patch
+CVE-2023-52425/011_60b74209899a67d426d208662674b55a5eed918c.patch
+CVE-2023-52425/012_3d8141d26a3b01ff948e00956cb0723a89dadf7f.patch
+# not used, as it only make clang-tidy happy CVE-2023-52425/013_182bbc350ed8b3c547133a9a44a4f30a0ba3b77e.patch
+CVE-2023-52425/014_8f8aaf5c8e8a6e812dd8dadd96cf9bd044bc085a.patch
+CVE-2023-52425/015_09fdf998e7cf3f8f9327e6602077791095aedd4d.patch
+CVE-2023-52425/016_d5b02e96ab95d2a7ae0aea72d00054b9d036d76d.patch

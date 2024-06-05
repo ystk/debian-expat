@@ -1,0 +1,12 @@
+include:
+- https://salsa.debian.org/lts-team/pipeline/raw/master/recipes/jessie.yml
+
+variables:
+  RELEASE: 'jessie'
+  # There are no runners. See https://salsa.debian.org/lts-team/pipeline/-/issues/6
+  SALSA_CI_DISABLE_BUILD_PACKAGE_ARMHF: 1
+  SALSA_CI_DISABLE_BUILD_PACKAGE_ARMEL: 1
+  SALSA_CI_COMPONENTS: 'main contrib non-free'
+  SALSA_CI_DISABLE_REPROTEST: 1
+  SALSA_CI_DISABLE_LINTIAN: 1
+  SALSA_CI_DISABLE_PIUPARTS: 1
