@@ -1,0 +1,22 @@
+From: Sebastian Pipping <sebastian@pipping.org>
+Date: Sun, 28 May 2017 21:35:12 +0200
+Subject: Reject negative length call to XML_Parse
+
+Origin: https://github.com/libexpat/libexpat/commit/70db8d2538a10f4c022655d6895e4c3e78692e7f
+---
+ lib/xmlparse.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/lib/xmlparse.c b/lib/xmlparse.c
+index 0f3ddc1..b8195cc 100644
+--- a/lib/xmlparse.c
++++ b/lib/xmlparse.c
+@@ -1698,7 +1698,7 @@ XML_SetHashSalt(XML_Parser parser,
+ enum XML_Status XMLCALL
+ XML_Parse(XML_Parser parser, const char *s, int len, int isFinal)
+ {
+-  if ((parser == NULL) || ((s == NULL) && (len != 0))) {
++  if ((parser == NULL) || (len < 0) || ((s == NULL) && (len != 0))) {
+     errorCode = XML_ERROR_INVALID_ARGUMENT;
+     return XML_STATUS_ERROR;
+   }

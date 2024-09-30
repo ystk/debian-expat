@@ -1,0 +1,25 @@
+From: Hans Wennborg <hans@chromium.org>
+Date: Wed, 25 Oct 2017 01:30:52 -0700
+Subject: XML_ErrorString: handle XML_ERROR_INVALID_ARGUMENT
+
+Previously, this enum didn't have any error string.
+
+Origin: https://github.com/libexpat/libexpat/commit/5ae72360c66629509684297abf78e8a62894c252
+---
+ lib/xmlparse.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/lib/xmlparse.c b/lib/xmlparse.c
+index 8ccd031..48410f3 100644
+--- a/lib/xmlparse.c
++++ b/lib/xmlparse.c
+@@ -2215,7 +2215,8 @@ XML_ErrorString(enum XML_Error code)
+     XML_L("cannot suspend in external parameter entity"),
+     XML_L("reserved prefix (xml) must not be undeclared or bound to another namespace name"),
+     XML_L("reserved prefix (xmlns) must not be declared or undeclared"),
+-    XML_L("prefix must not be bound to one of the reserved namespace names")
++    XML_L("prefix must not be bound to one of the reserved namespace names"),
++    XML_L("invalid argument")
+   };
+   if (code > 0 && code < sizeof(message)/sizeof(message[0]))
+     return message[code];

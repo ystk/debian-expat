@@ -47,3 +47,12 @@ CVE-2023-52425/012_3d8141d26a3b01ff948e00956cb0723a89dadf7f.patch
 CVE-2023-52425/014_8f8aaf5c8e8a6e812dd8dadd96cf9bd044bc085a.patch
 CVE-2023-52425/015_09fdf998e7cf3f8f9327e6602077791095aedd4d.patch
 CVE-2023-52425/016_d5b02e96ab95d2a7ae0aea72d00054b9d036d76d.patch
+NULL-checks.patch
+Reject-negative-length-call-to-XML_Parse.patch
+xmlparse.c-Fix-parser-NULL-dereference.patch
+XML_ErrorString-handle-XML_ERROR_INVALID_ARGUMENT.patch
+CVE-2024-45490/01-5c1a316.patch
+CVE-2024-45490/02-c12f039.patch
+CVE-2024-45490/03-2db2330.patch
+CVE-2024-45491.patch
+CVE-2024-45492.patch
